@@ -1,0 +1,13 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+def pods
+#    pod 'FSCalendar'
+end
+
+target 'SelectedDay' do
+    pods
+end
+

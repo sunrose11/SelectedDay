@@ -1,0 +1,6 @@
+framework module Pods_SelectedDay {
+  umbrella header "Pods-SelectedDay-umbrella.h"
+
+  export *
+  module * { export * }
+}

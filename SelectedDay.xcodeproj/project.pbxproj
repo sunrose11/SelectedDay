@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF18120321CA105200017A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18120221CA105200017A65 /* AppDelegate.swift */; };
+		BF18120521CA105200017A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18120421CA105200017A65 /* ViewController.swift */; };
+		BF18120821CA105300017A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF18120621CA105300017A65 /* Main.storyboard */; };
+		BF18120A21CA106A00017A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF18120921CA106A00017A65 /* Assets.xcassets */; };
+		BF18120D21CA106A00017A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF18120B21CA106A00017A65 /* LaunchScreen.storyboard */; };
+		BF18121821CA106C00017A65 /* SelectedDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18121721CA106C00017A65 /* SelectedDayTests.swift */; };
+		BF18122321CA106C00017A65 /* SelectedDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18122221CA106C00017A65 /* SelectedDayUITests.swift */; };
+		BF18123721CA1D9A00017A65 /* PGActionSheetCalendarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18123321CA1D9A00017A65 /* PGActionSheetCalendarDelegate.swift */; };
+		BF18123821CA1D9A00017A65 /* PGActionSheetCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18123421CA1D9A00017A65 /* PGActionSheetCalendarView.swift */; };
+		BF18123921CA1D9A00017A65 /* PGActionSheetCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18123521CA1D9A00017A65 /* PGActionSheetCalendar.swift */; };
+		BF18123A21CA1D9A00017A65 /* PGActionSheetCalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18123621CA1D9A00017A65 /* PGActionSheetCalendarHeader.swift */; };
+		BF18129321CA1FE800017A65 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18127321CA1FE800017A65 /* FSCalendarCollectionView.m */; };
+		BF18129421CA1FE800017A65 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18127721CA1FE800017A65 /* FSCalendarDelegationProxy.m */; };
+		BF18129521CA1FE800017A65 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18127921CA1FE800017A65 /* FSCalendarDelegationFactory.m */; };
+		BF18129621CA1FE800017A65 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18127F21CA1FE800017A65 /* FSCalendarCell.m */; };
+		BF18129721CA1FE800017A65 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128021CA1FE800017A65 /* FSCalendarStickyHeader.m */; };
+		BF18129821CA1FE800017A65 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128121CA1FE800017A65 /* FSCalendar.m */; };
+		BF18129921CA1FE800017A65 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128221CA1FE800017A65 /* FSCalendarCollectionViewLayout.m */; };
+		BF18129A21CA1FE800017A65 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128321CA1FE800017A65 /* FSCalendarScopeHandle.m */; };
+		BF18129B21CA1FE800017A65 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128421CA1FE800017A65 /* FSCalendarWeekdayView.m */; };
+		BF18129C21CA1FE800017A65 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128821CA1FE800017A65 /* FSCalendarExtensions.m */; };
+		BF18129D21CA1FE800017A65 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128A21CA1FE800017A65 /* FSCalendar+Deprecated.m */; };
+		BF18129E21CA1FE800017A65 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128B21CA1FE800017A65 /* FSCalendarConstants.m */; };
+		BF18129F21CA1FE800017A65 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128C21CA1FE800017A65 /* FSCalendarCalculator.m */; };
+		BF1812A021CA1FE800017A65 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18128D21CA1FE800017A65 /* FSCalendarHeaderView.m */; };
+		BF1812A121CA1FE800017A65 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18129121CA1FE800017A65 /* FSCalendarTransitionCoordinator.m */; };
+		BF1812A221CA1FE800017A65 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = BF18129221CA1FE800017A65 /* FSCalendarAppearance.m */; };
+		FCF4F245DEE41E8EEAAA5A99 /* Pods_SelectedDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F9A5BBF22505ADFEE1FDE0 /* Pods_SelectedDay.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF18121421CA106C00017A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1811F721CA105100017A65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1811FE21CA105100017A65;
+			remoteInfo = SelectedDay;
+		};
+		BF18121F21CA106C00017A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1811F721CA105100017A65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1811FE21CA105100017A65;
+			remoteInfo = SelectedDay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27F9A5BBF22505ADFEE1FDE0 /* Pods_SelectedDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelectedDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFECC3B2A8E13F575A64C1E /* Pods-SelectedDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectedDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelectedDay/Pods-SelectedDay.release.xcconfig"; sourceTree = "<group>"; };
+		7A1EFFB3314F0D0906F11C21 /* Pods-SelectedDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectedDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelectedDay/Pods-SelectedDay.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1811FF21CA105200017A65 /* SelectedDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectedDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF18120221CA105200017A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF18120421CA105200017A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF18120721CA105300017A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF18120921CA106A00017A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF18120C21CA106A00017A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF18120E21CA106A00017A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF18121321CA106C00017A65 /* SelectedDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectedDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF18121721CA106C00017A65 /* SelectedDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayTests.swift; sourceTree = "<group>"; };
+		BF18121921CA106C00017A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF18121E21CA106C00017A65 /* SelectedDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectedDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF18122221CA106C00017A65 /* SelectedDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayUITests.swift; sourceTree = "<group>"; };
+		BF18122421CA106C00017A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF18123321CA1D9A00017A65 /* PGActionSheetCalendarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGActionSheetCalendarDelegate.swift; sourceTree = "<group>"; };
+		BF18123421CA1D9A00017A65 /* PGActionSheetCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGActionSheetCalendarView.swift; sourceTree = "<group>"; };
+		BF18123521CA1D9A00017A65 /* PGActionSheetCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGActionSheetCalendar.swift; sourceTree = "<group>"; };
+		BF18123621CA1D9A00017A65 /* PGActionSheetCalendarHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGActionSheetCalendarHeader.swift; sourceTree = "<group>"; };
+		BF18127121CA1F4300017A65 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BF18127321CA1FE800017A65 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		BF18127421CA1FE800017A65 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		BF18127521CA1FE800017A65 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		BF18127621CA1FE800017A65 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		BF18127721CA1FE800017A65 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		BF18127821CA1FE800017A65 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		BF18127921CA1FE800017A65 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		BF18127A21CA1FE800017A65 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		BF18127B21CA1FE800017A65 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		BF18127C21CA1FE800017A65 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		BF18127D21CA1FE800017A65 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		BF18127E21CA1FE800017A65 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		BF18127F21CA1FE800017A65 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		BF18128021CA1FE800017A65 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		BF18128121CA1FE800017A65 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		BF18128221CA1FE800017A65 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		BF18128321CA1FE800017A65 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		BF18128421CA1FE800017A65 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		BF18128521CA1FE800017A65 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		BF18128621CA1FE800017A65 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		BF18128721CA1FE800017A65 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		BF18128821CA1FE800017A65 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		BF18128921CA1FE800017A65 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		BF18128A21CA1FE800017A65 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		BF18128B21CA1FE800017A65 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		BF18128C21CA1FE800017A65 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		BF18128D21CA1FE800017A65 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		BF18128E21CA1FE800017A65 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		BF18128F21CA1FE800017A65 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		BF18129021CA1FE800017A65 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		BF18129121CA1FE800017A65 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		BF18129221CA1FE800017A65 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF1811FC21CA105100017A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF4F245DEE41E8EEAAA5A99 /* Pods_SelectedDay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF18121021CA106C00017A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF18121B21CA106C00017A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C8CF676F2565AC863E98E73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27F9A5BBF22505ADFEE1FDE0 /* Pods_SelectedDay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4D1957FDD72A3B5846BCC0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A1EFFB3314F0D0906F11C21 /* Pods-SelectedDay.debug.xcconfig */,
+				6BFECC3B2A8E13F575A64C1E /* Pods-SelectedDay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF1811F621CA105100017A65 = {
+			isa = PBXGroup;
+			children = (
+				BF18127121CA1F4300017A65 /* Bridging-Header.h */,
+				BF18120121CA105200017A65 /* SelectedDay */,
+				BF18121621CA106C00017A65 /* SelectedDayTests */,
+				BF18122121CA106C00017A65 /* SelectedDayUITests */,
+				BF18120021CA105200017A65 /* Products */,
+				A4D1957FDD72A3B5846BCC0D /* Pods */,
+				8C8CF676F2565AC863E98E73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF18120021CA105200017A65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1811FF21CA105200017A65 /* SelectedDay.app */,
+				BF18121321CA106C00017A65 /* SelectedDayTests.xctest */,
+				BF18121E21CA106C00017A65 /* SelectedDayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF18120121CA105200017A65 /* SelectedDay */ = {
+			isa = PBXGroup;
+			children = (
+				BF18123221CA1D9A00017A65 /* PGActionSheetCalendar */,
+				BF18120221CA105200017A65 /* AppDelegate.swift */,
+				BF18120421CA105200017A65 /* ViewController.swift */,
+				BF18120621CA105300017A65 /* Main.storyboard */,
+				BF18120921CA106A00017A65 /* Assets.xcassets */,
+				BF18120B21CA106A00017A65 /* LaunchScreen.storyboard */,
+				BF18120E21CA106A00017A65 /* Info.plist */,
+			);
+			path = SelectedDay;
+			sourceTree = "<group>";
+		};
+		BF18121621CA106C00017A65 /* SelectedDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF18121721CA106C00017A65 /* SelectedDayTests.swift */,
+				BF18121921CA106C00017A65 /* Info.plist */,
+			);
+			path = SelectedDayTests;
+			sourceTree = "<group>";
+		};
+		BF18122121CA106C00017A65 /* SelectedDayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF18122221CA106C00017A65 /* SelectedDayUITests.swift */,
+				BF18122421CA106C00017A65 /* Info.plist */,
+			);
+			path = SelectedDayUITests;
+			sourceTree = "<group>";
+		};
+		BF18123221CA1D9A00017A65 /* PGActionSheetCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				BF18127221CA1FE800017A65 /* FSCalendar */,
+				BF18123321CA1D9A00017A65 /* PGActionSheetCalendarDelegate.swift */,
+				BF18123421CA1D9A00017A65 /* PGActionSheetCalendarView.swift */,
+				BF18123521CA1D9A00017A65 /* PGActionSheetCalendar.swift */,
+				BF18123621CA1D9A00017A65 /* PGActionSheetCalendarHeader.swift */,
+			);
+			path = PGActionSheetCalendar;
+			sourceTree = "<group>";
+		};
+		BF18127221CA1FE800017A65 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				BF18127321CA1FE800017A65 /* FSCalendarCollectionView.m */,
+				BF18127421CA1FE800017A65 /* FSCalendarWeekdayView.h */,
+				BF18127521CA1FE800017A65 /* FSCalendarCollectionViewLayout.h */,
+				BF18127621CA1FE800017A65 /* FSCalendarScopeHandle.h */,
+				BF18127721CA1FE800017A65 /* FSCalendarDelegationProxy.m */,
+				BF18127821CA1FE800017A65 /* FSCalendarExtensions.h */,
+				BF18127921CA1FE800017A65 /* FSCalendarDelegationFactory.m */,
+				BF18127A21CA1FE800017A65 /* FSCalendarCalculator.h */,
+				BF18127B21CA1FE800017A65 /* FSCalendarHeaderView.h */,
+				BF18127C21CA1FE800017A65 /* FSCalendarConstants.h */,
+				BF18127D21CA1FE800017A65 /* FSCalendarAppearance.h */,
+				BF18127E21CA1FE800017A65 /* FSCalendarTransitionCoordinator.h */,
+				BF18127F21CA1FE800017A65 /* FSCalendarCell.m */,
+				BF18128021CA1FE800017A65 /* FSCalendarStickyHeader.m */,
+				BF18128121CA1FE800017A65 /* FSCalendar.m */,
+				BF18128221CA1FE800017A65 /* FSCalendarCollectionViewLayout.m */,
+				BF18128321CA1FE800017A65 /* FSCalendarScopeHandle.m */,
+				BF18128421CA1FE800017A65 /* FSCalendarWeekdayView.m */,
+				BF18128521CA1FE800017A65 /* FSCalendarCollectionView.h */,
+				BF18128621CA1FE800017A65 /* FSCalendarDynamicHeader.h */,
+				BF18128721CA1FE800017A65 /* FSCalendarDelegationFactory.h */,
+				BF18128821CA1FE800017A65 /* FSCalendarExtensions.m */,
+				BF18128921CA1FE800017A65 /* FSCalendarDelegationProxy.h */,
+				BF18128A21CA1FE800017A65 /* FSCalendar+Deprecated.m */,
+				BF18128B21CA1FE800017A65 /* FSCalendarConstants.m */,
+				BF18128C21CA1FE800017A65 /* FSCalendarCalculator.m */,
+				BF18128D21CA1FE800017A65 /* FSCalendarHeaderView.m */,
+				BF18128E21CA1FE800017A65 /* FSCalendarStickyHeader.h */,
+				BF18128F21CA1FE800017A65 /* FSCalendar.h */,
+				BF18129021CA1FE800017A65 /* FSCalendarCell.h */,
+				BF18129121CA1FE800017A65 /* FSCalendarTransitionCoordinator.m */,
+				BF18129221CA1FE800017A65 /* FSCalendarAppearance.m */,
+			);
+			name = FSCalendar;
+			path = SelectedDay/FSCalendar;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1811FE21CA105100017A65 /* SelectedDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF18122721CA106C00017A65 /* Build configuration list for PBXNativeTarget "SelectedDay" */;
+			buildPhases = (
+				820DA8F1452202DF0DE43F66 /* [CP] Check Pods Manifest.lock */,
+				BF1811FB21CA105100017A65 /* Sources */,
+				BF1811FC21CA105100017A65 /* Frameworks */,
+				BF1811FD21CA105100017A65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SelectedDay;
+			productName = SelectedDay;
+			productReference = BF1811FF21CA105200017A65 /* SelectedDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF18121221CA106C00017A65 /* SelectedDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF18122A21CA106C00017A65 /* Build configuration list for PBXNativeTarget "SelectedDayTests" */;
+			buildPhases = (
+				BF18120F21CA106C00017A65 /* Sources */,
+				BF18121021CA106C00017A65 /* Frameworks */,
+				BF18121121CA106C00017A65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF18121521CA106C00017A65 /* PBXTargetDependency */,
+			);
+			name = SelectedDayTests;
+			productName = SelectedDayTests;
+			productReference = BF18121321CA106C00017A65 /* SelectedDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF18121D21CA106C00017A65 /* SelectedDayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF18122D21CA106C00017A65 /* Build configuration list for PBXNativeTarget "SelectedDayUITests" */;
+			buildPhases = (
+				BF18121A21CA106C00017A65 /* Sources */,
+				BF18121B21CA106C00017A65 /* Frameworks */,
+				BF18121C21CA106C00017A65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF18122021CA106C00017A65 /* PBXTargetDependency */,
+			);
+			name = SelectedDayUITests;
+			productName = SelectedDayUITests;
+			productReference = BF18121E21CA106C00017A65 /* SelectedDayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1811F721CA105100017A65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "叶熙文";
+				TargetAttributes = {
+					BF1811FE21CA105100017A65 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BF18121221CA106C00017A65 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BF1811FE21CA105100017A65;
+					};
+					BF18121D21CA106C00017A65 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BF1811FE21CA105100017A65;
+					};
+				};
+			};
+			buildConfigurationList = BF1811FA21CA105100017A65 /* Build configuration list for PBXProject "SelectedDay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF1811F621CA105100017A65;
+			productRefGroup = BF18120021CA105200017A65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1811FE21CA105100017A65 /* SelectedDay */,
+				BF18121221CA106C00017A65 /* SelectedDayTests */,
+				BF18121D21CA106C00017A65 /* SelectedDayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF1811FD21CA105100017A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF18120D21CA106A00017A65 /* LaunchScreen.storyboard in Resources */,
+				BF18120A21CA106A00017A65 /* Assets.xcassets in Resources */,
+				BF18120821CA105300017A65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF18121121CA106C00017A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF18121C21CA106C00017A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		820DA8F1452202DF0DE43F66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelectedDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF1811FB21CA105100017A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF18120521CA105200017A65 /* ViewController.swift in Sources */,
+				BF18129D21CA1FE800017A65 /* FSCalendar+Deprecated.m in Sources */,
+				BF18129521CA1FE800017A65 /* FSCalendarDelegationFactory.m in Sources */,
+				BF18129821CA1FE800017A65 /* FSCalendar.m in Sources */,
+				BF18129321CA1FE800017A65 /* FSCalendarCollectionView.m in Sources */,
+				BF18129C21CA1FE800017A65 /* FSCalendarExtensions.m in Sources */,
+				BF1812A221CA1FE800017A65 /* FSCalendarAppearance.m in Sources */,
+				BF18129921CA1FE800017A65 /* FSCalendarCollectionViewLayout.m in Sources */,
+				BF18123921CA1D9A00017A65 /* PGActionSheetCalendar.swift in Sources */,
+				BF18129721CA1FE800017A65 /* FSCalendarStickyHeader.m in Sources */,
+				BF18129B21CA1FE800017A65 /* FSCalendarWeekdayView.m in Sources */,
+				BF1812A121CA1FE800017A65 /* FSCalendarTransitionCoordinator.m in Sources */,
+				BF18129E21CA1FE800017A65 /* FSCalendarConstants.m in Sources */,
+				BF18129621CA1FE800017A65 /* FSCalendarCell.m in Sources */,
+				BF18123821CA1D9A00017A65 /* PGActionSheetCalendarView.swift in Sources */,
+				BF18129F21CA1FE800017A65 /* FSCalendarCalculator.m in Sources */,
+				BF18129A21CA1FE800017A65 /* FSCalendarScopeHandle.m in Sources */,
+				BF18123A21CA1D9A00017A65 /* PGActionSheetCalendarHeader.swift in Sources */,
+				BF1812A021CA1FE800017A65 /* FSCalendarHeaderView.m in Sources */,
+				BF18123721CA1D9A00017A65 /* PGActionSheetCalendarDelegate.swift in Sources */,
+				BF18120321CA105200017A65 /* AppDelegate.swift in Sources */,
+				BF18129421CA1FE800017A65 /* FSCalendarDelegationProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF18120F21CA106C00017A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF18121821CA106C00017A65 /* SelectedDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF18121A21CA106C00017A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF18122321CA106C00017A65 /* SelectedDayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF18121521CA106C00017A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1811FE21CA105100017A65 /* SelectedDay */;
+			targetProxy = BF18121421CA106C00017A65 /* PBXContainerItemProxy */;
+		};
+		BF18122021CA106C00017A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1811FE21CA105100017A65 /* SelectedDay */;
+			targetProxy = BF18121F21CA106C00017A65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF18120621CA105300017A65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF18120721CA105300017A65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF18120B21CA106A00017A65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF18120C21CA106A00017A65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF18122521CA106C00017A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF18122621CA106C00017A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF18122821CA106C00017A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1EFFB3314F0D0906F11C21 /* Pods-SelectedDay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645626Y7JQ;
+				INFOPLIST_FILE = SelectedDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunrose.SelectedDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF18122921CA106C00017A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFECC3B2A8E13F575A64C1E /* Pods-SelectedDay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645626Y7JQ;
+				INFOPLIST_FILE = SelectedDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunrose.SelectedDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF18122B21CA106C00017A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645626Y7JQ;
+				INFOPLIST_FILE = SelectedDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunrose.SelectedDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectedDay.app/SelectedDay";
+			};
+			name = Debug;
+		};
+		BF18122C21CA106C00017A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645626Y7JQ;
+				INFOPLIST_FILE = SelectedDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunrose.SelectedDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectedDay.app/SelectedDay";
+			};
+			name = Release;
+		};
+		BF18122E21CA106C00017A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645626Y7JQ;
+				INFOPLIST_FILE = SelectedDayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunrose.SelectedDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SelectedDay;
+			};
+			name = Debug;
+		};
+		BF18122F21CA106C00017A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645626Y7JQ;
+				INFOPLIST_FILE = SelectedDayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunrose.SelectedDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SelectedDay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1811FA21CA105100017A65 /* Build configuration list for PBXProject "SelectedDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF18122521CA106C00017A65 /* Debug */,
+				BF18122621CA106C00017A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF18122721CA106C00017A65 /* Build configuration list for PBXNativeTarget "SelectedDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF18122821CA106C00017A65 /* Debug */,
+				BF18122921CA106C00017A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF18122A21CA106C00017A65 /* Build configuration list for PBXNativeTarget "SelectedDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF18122B21CA106C00017A65 /* Debug */,
+				BF18122C21CA106C00017A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF18122D21CA106C00017A65 /* Build configuration list for PBXNativeTarget "SelectedDayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF18122E21CA106C00017A65 /* Debug */,
+				BF18122F21CA106C00017A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1811F721CA105100017A65 /* Project object */;
+}

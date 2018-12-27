@@ -1,6 +1,9 @@
 # SelectedDay
 ![你的小可爱已上线](http://upload-images.jianshu.io/upload_images/7882691-886183f3a8e30c93.GIF?imageMogr2/auto-orient/strip)
 >根据用户需求我们需要做个显示日期和星期的预约栏目 需要向用户展现5天内的日期。话不多说上代码
+
+![效果.gif](https://upload-images.jianshu.io/upload_images/7882691-89dce255bfd0ec00.gif?imageMogr2/auto-orient/strip)
+
 ```
 // nowDay 是传入的需要计算的日期
     func getLastDay(_ nowDay: String) -> Array<String> {
